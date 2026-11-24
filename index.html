@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <title>PinHub Beta Privacy Notice</title>
+  <title>PinHub.golf Privacy Notice</title>
   <meta name="description" content="Privacy information for invited testers of the PinHub mobile app beta.">
   <style>
     :root { color-scheme: light dark; --bg:#f5f7f4; --card:#ffffff; --text:#14221a; --muted:#5c6b62; --accent:#17663a; --line:#dbe4dd; }
@@ -26,59 +26,39 @@
 </head>
 <body>
 <main>
-  <p class="eyebrow">PinHub · TestFlight beta</p>
-  <h1>Beta Privacy Notice</h1>
-  <p class="meta">Effective 3 September 2026 · Version Beta 1.0</p>
-  <p>This notice explains how personal data is handled when invited testers use the PinHub mobile-app prototype through Apple TestFlight or a Google Play testing track.</p>
+  <p class="eyebrow">PinHub · invited beta</p>
+  <h1>Privacy Notice</h1>
+  <p class="meta">Effective 24 November 2026 · Version Beta 1.1</p>
+  <p>This notice describes the current PinHub.golf mobile beta distributed through Apple TestFlight and, when enabled, Google Play internal testing. SegnaTech LIMITED operates the beta. For privacy questions or requests, email <a href="mailto:admin@segnatech.co.uk">admin@segnatech.co.uk</a>.</p>
 
-  <h2>Who is responsible</h2>
-  <p>PinHub is operated for beta testing by SegnaTech LIMITED. For privacy questions, requests or complaints, email <a href="mailto:admin@segnatech.co.uk">admin@segnatech.co.uk</a>.</p>
+  <h2>What the beta does</h2>
+  <p>Invited testers can explore pilot golf courses, record rounds on their device, view live player-to-green distance where course coordinates are available, and preview the Iford FootGolf league concept. FlingGolf, FootGolf and SpeedGolf are shown. The league preview does not take real bookings, registrations or payments. DiscGolf and Player Connections, including nearby-player discovery and chat, are switched off in the current build.</p>
 
-  <h2>Beta scope</h2>
-  <p>The beta is a functional prototype for FlingGolf, FootGolf, DiscGolf and SpeedGolf. It is not a production service. Payments, public social discovery and online competition functions are disabled. Testers must not enter sensitive personal information, confidential venue information or information about another person.</p>
-
-  <h2>Data the current beta may handle</h2>
+  <h2>Information we handle</h2>
   <ul>
-    <li>TestFlight or Google Play tester and diagnostic information made available by Apple or Google.</li>
-    <li>Feedback, screenshots and communications that a tester chooses to send.</li>
-    <li>A demonstration profile, sport preference, settings, locally recorded rounds, scores and provisional handicap data stored on the test device.</li>
-    <li>Precise device location while the tester actively uses a round feature and grants permission. The app displays accuracy information; the prototype does not treat device location as a surveyed course measurement.</li>
-    <li>Basic technical logs needed to diagnose a reported fault if a connected beta service is enabled.</li>
+    <li><strong>Invited account:</strong> email address, account identifier, sign-in and password-reset information, and any profile details supplied for the test. Supabase provides authentication; Brevo delivers authentication email.</li>
+    <li><strong>Course use:</strong> authenticated requests to the PinHub API for pilot course data. Railway hosts the API and may process standard connection and error logs. GolfAPI.io supplies course data to the server; your precise device position is not sent to GolfAPI.io for the distance feature.</li>
+    <li><strong>Location:</strong> when you open a distance or round feature and allow foreground location, the app uses your device position to calculate distance to a course point. The current distance feature does not send your precise position to PinHub servers. Your device's operating-system location services also process location under your device settings.</li>
+    <li><strong>Local information:</strong> round scores, score history, provisional handicap calculations, settings and cached course information are stored on the test device. The current beta does not sync ordinary round scores to a PinHub account.</li>
+    <li><strong>Testing and support:</strong> Apple or Google may provide tester and diagnostic information. We process feedback, screenshots and messages you choose to send to the support address.</li>
   </ul>
-  <p>The current prototype does not intentionally collect payment-card details, advertising identifiers or special-category data.</p>
+  <p>We do not use this beta for targeted advertising or sell personal data. We do not intentionally collect payment-card information or special-category information through the current app. Please do not put sensitive information about yourself or another person into test feedback.</p>
 
-  <h2>Why data is used and legal basis</h2>
-  <table>
-    <thead><tr><th>Purpose</th><th>UK GDPR basis</th></tr></thead>
-    <tbody>
-      <tr><td>Provide the invited beta and its core functions</td><td>Legitimate interests in testing and improving PinHub; performance of an agreed beta where applicable</td></tr>
-      <tr><td>Use device location during a round</td><td>Consent through the device permission and the tester's choice to use the feature</td></tr>
-      <tr><td>Diagnose crashes, security issues and defects</td><td>Legitimate interests in operating a safe and reliable beta</td></tr>
-      <tr><td>Respond to feedback or privacy requests</td><td>Legitimate interests and legal obligation where applicable</td></tr>
-    </tbody>
-  </table>
-  <p>Location permission may be refused or withdrawn in device settings. The tester can still use non-location parts of the prototype.</p>
+  <h2>Why we use it</h2>
+  <p>We use account information to provide and protect the invited beta, course requests to show the pilot layouts, and optional foreground location to calculate distances. We use technical logs and feedback to investigate defects and keep the service secure. Our UK GDPR bases are legitimate interests in operating and improving a limited beta, performance of the testing arrangement where applicable, and consent where we ask for it. Location access also requires your device permission, which you can withdraw in settings; non-location features remain available.</p>
 
-  <h2>Storage, sharing and international processing</h2>
-  <p>Prototype profile, preference and round data is currently designed to remain on the device unless a connected test service is explicitly enabled. Apple processes TestFlight information under Apple's terms; Google processes Play testing information under Google's terms. Approved development or hosting suppliers may process the minimum data needed to operate or diagnose the beta under confidentiality and data-protection obligations.</p>
-  <p>PinHub does not sell personal data. Personal data is not shared with venues, governing bodies or advertisers for their own marketing. If a supplier processes data outside the UK, an appropriate transfer safeguard will be used where required.</p>
+  <h2>Where information goes</h2>
+  <p>Supabase processes invited-account data; Brevo sends account email; Railway hosts the PinHub API; Expo, Apple and Google support build distribution and testing. These providers may process data in different countries under their applicable terms and safeguards. We do not share personal data with venues, governing bodies or advertisers for their own marketing. Access is limited to authorised team members and service providers that need it for the beta.</p>
 
   <h2>Retention and deletion</h2>
-  <ul>
-    <li>On-device prototype data remains until the tester clears it, deletes it using an available app control, or removes the app.</li>
-    <li>Tester feedback and defect evidence is kept only as long as needed to resolve the issue and document the beta, normally no more than 12 months unless a legal or security reason requires longer.</li>
-    <li>Distribution-platform records are retained by Apple or Google under their own policies.</li>
-  </ul>
-  <p>To request access, correction, export, restriction, objection or deletion, email <a href="mailto:admin@segnatech.co.uk">admin@segnatech.co.uk</a>. The request may need identity verification. UK users may complain to the Information Commissioner's Office at <a href="https://ico.org.uk/">ico.org.uk</a>.</p>
+  <p>Invited-account information remains while the beta account is active and is removed following a verified deletion request, subject to any necessary security or legal retention. Local scores, round history and settings remain on this device until the app and its local data are removed. The current beta has no in-app round-history deletion control. We normally retain voluntarily supplied feedback and defect evidence for no more than 12 months unless an issue or legal duty requires longer. Apple and Google retain their own distribution records under their policies.</p>
+  <p>You can request deletion of your PinHub account and associated data from within the app through the privacy contact, or use our <a href="./delete-account.html">account deletion request page</a>. We may verify that the request comes from the account holder. You may also request access, correction, export, restriction or objection through <a href="mailto:admin@segnatech.co.uk">admin@segnatech.co.uk</a>. UK users may complain to the <a href="https://ico.org.uk/">Information Commissioner's Office</a>.</p>
 
-  <h2>Children and safeguarding</h2>
-  <p>The external beta is not intended for unsupervised use by children. A tester under 18 must participate only through an approved, supervised programme with appropriate parental or guardian arrangements. Do not use beta feedback channels to disclose safeguarding details; contact the responsible safeguarding lead or emergency services where appropriate.</p>
+  <h2>Children, security and changes</h2>
+  <p>The current invited beta is not intended for unsupervised children. Player Connections and chat are disabled. We use encrypted connections and controlled account access, though no beta can be guaranteed risk-free. Report a security or privacy concern to <a href="mailto:admin@segnatech.co.uk">admin@segnatech.co.uk</a>.</p>
+  <p>We will update this notice and the app's disclosures before enabling new features such as social discovery, messaging, online competitions or payments.</p>
 
-  <h2>Security and changes</h2>
-  <p>Access is limited to invited testers and authorised team members. Reasonable technical and organisational safeguards are used, but no prototype can be guaranteed risk-free. Report suspected security or privacy incidents promptly to <a href="mailto:admin@segnatech.co.uk">admin@segnatech.co.uk</a>.</p>
-  <p class="note">This notice will be updated before production launch and whenever the beta adds accounts, cloud storage, analytics, payments, social features or new data providers. Material changes will be communicated to testers.</p>
-
-  <footer>© 2026 SegnaTech LIMITED · PinHub</footer>
+  <footer>© 2026 SegnaTech LIMITED · PinHub.golf</footer>
 </main>
 </body>
 </html>
